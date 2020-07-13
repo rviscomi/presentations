@@ -180,7 +180,7 @@ The Core Web Vitals report on Search Console shows a site-wide view of UX perfor
 
 #### Web Vitals extension
 
-![Web Vitals extension](https://user-images.githubusercontent.com/1120896/87358722-6152a980-c534-11ea-8e5b-d7d75d0c515b.png)
+![Web Vitals extension](https://user-images.githubusercontent.com/1120896/87359822-a37cea80-c536-11ea-8b73-6eb730d6d44b.png)
 
 https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma
 
