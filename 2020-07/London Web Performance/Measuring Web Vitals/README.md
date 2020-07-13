@@ -1,13 +1,6 @@
----
-Venue:
-  London Web Performance (online)
-Date and time:
-  14th July 2020, 18:30 (GMT)
-Duration:
-  20 minutes + Q&A
-Event page:
-  https://ldnwebperf.org/events/lwp-july-measurement-and-observability/
----
+Venue | Date and time | Duration | Event page
+-- | -- | -- | --
+London Web Performance (online) | 14th July 2020, 18:30 (GMT) | 20 minutes + Q&A | [🔗](https://ldnwebperf.org/events/lwp-july-measurement-and-observability/)
 
 # Measuring Web Vitals
 
