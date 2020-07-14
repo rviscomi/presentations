@@ -229,3 +229,10 @@ web.dev/measure/ and the lab section of PSI include Lighthouse-powered measureme
     - Tabs that are loaded in the background may have high LCP.
 3. Metric definitions and collection methodologies are always being improved.
     - Keep an eye on the Core Web Vitals [changelog](https://chromium.googlesource.com/chromium/src/+/master/docs/speed/metrics_changelog/README.md) or CrUX monthly [announcements](https://groups.google.com/a/chromium.org/forum/#!forum/chrome-ux-report-announce) to learn about changes that may affect the data.
+4. The Web Vitals DevRel team is actively seeking feedback about the Web Vitals developer experience. Go through the usual product feedback channels or reach out to us on Twitter:
+    - [Rick Viscomi](https://twitter.com/rick_viscomi) (me)
+    - [Phil Walton](https://twitter.com/philwalton)
+    - [Katie Hempenius](https://twitter.com/katiehempenius)
+    - [Houssein Djirdeh](https://twitter.com/hdjirdeh)
+    - [Yoav Weiss](https://twitter.com/yoavweiss)
+    - [Brendan Kenny](https://twitter.com/brendankenny)
