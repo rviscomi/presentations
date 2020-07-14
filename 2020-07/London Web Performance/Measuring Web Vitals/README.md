@@ -193,8 +193,39 @@ The [Web Vitals Chrome extension](https://github.com/GoogleChrome/web-vitals-ext
 
 Lab data helps you understand why performance may be degraded and how to improve it. For results to be relevant, the tests must be calibrated using realistic user conditions.
 
-### PageSpeed Insights
+Note that FID requires user interaction, so the lab version of this metric is [Total Blocking Time](https://web.dev/lighthouse-total-blocking-time/) (TBT), which is the sum of all long tasks between FCP and TTI.
 
 ### Lighthouse
 
+![web.dev/measure](https://user-images.githubusercontent.com/1120896/87360469-30747380-c538-11ea-91ae-a3bfd85eae8d.png)
+
+https://web.dev/measure/
+https://developers.google.com/speed/pagespeed/insights/
+
+web.dev/measure/ and the lab section of PSI include Lighthouse-powered measurements of Web Vitals. Lighthouse can also be run locally from Chrome DevTools using emulation.
+
+- prescriptive suggestions to optimize performance
+- predetermined desktop/mobile profiles and test locations
+
 ### WebPageTest
+
+![WebPageTest](https://user-images.githubusercontent.com/1120896/87360633-92cd7400-c538-11ea-8179-a2ed59e672c8.png)
+
+[WebPageTest](https://www.webpagetest.org/result/200714_DE_28555ee005e56cfed78d53f3927d6a3a/3/details/#waterfall_view_step1) allows you to fine tune the test configuration to closely match typical user demographics.
+
+- Web Vitals are highlighted in the test result summary
+- filmstrip view is annotated with layout shifts and LCP
+  - also graphs layout shifts over time
+
+## Things to keep in mind
+
+1. Use caution when comparing different tools, especially across lab and field.
+    - There may be subtle measurement/reporting differences across tools, which we're actively working to resolve.
+    - Lab tests tend to end as soon as the page is done loading, but real users subsequently interact with the page in ways that may affect the Web Vitals metrics.
+    - Your first party RUM data is the ultimate source of truth. Field data from CrUX is a public representation of that, but with limitations: Chrome-only, opt-in, relative proportions, coarse granularity, etc.
+2. Be aware of long observation windows.
+    - LCP can be continuously updated prior to user interactions and CLS is accumulated throughout the page lifetime.
+    - Apps with infinite scroll or "soft" SPA navigations could have higher values for LCP and CLS.
+    - Tabs that are loaded in the background may have high LCP.
+3. Metric definitions and collection methodologies are always being improved.
+    - Keep an eye on the Core Web Vitals [changelog](https://chromium.googlesource.com/chromium/src/+/master/docs/speed/metrics_changelog/README.md) or CrUX monthly [announcements](https://groups.google.com/a/chromium.org/forum/#!forum/chrome-ux-report-announce) to learn about changes that may affect the data.
