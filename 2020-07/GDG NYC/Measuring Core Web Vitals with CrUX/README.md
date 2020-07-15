@@ -153,6 +153,7 @@ The [CrUX API](https://developers.google.com/web/tools/chrome-user-experience-re
 - free quota
 
 Examples:
+- [goo.gle/crux-api-key to get your API key](https://goo.gle/crux-api-key)
 - [API Explorer](https://developers.google.com/web/tools/chrome-user-experience-report/api/reference/rest/v1/records/queryRecord?apix=true&apix_params=%7B%22resource%22%3A%7B%22origin%22%3A%22https%3A%2F%2Fweb.dev%22%7D%7D)
 - [crux-api-util.js](https://github.com/GoogleChrome/CrUX/blob/master/js/crux-api-util.js)
 - [Monitoring using Sheets](https://docs.google.com/spreadsheets/d/1orZNj4MRVgDeBWyrMCnyKl4gBNU-HouePo2jv2VTvc4/edit?usp=sharing)
