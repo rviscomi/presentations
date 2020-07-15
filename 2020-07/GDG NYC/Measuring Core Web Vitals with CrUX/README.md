@@ -81,12 +81,15 @@ https://web.dev/chrome-ux-report/
 
 https://developers.google.com/speed/pagespeed/insights/
 
-[PSI](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fweb.dev) shows page and origin-level field data (where available) and prescribes how to fix common performance issues.
+PSI shows page and origin-level field data (where available) and prescribes how to fix common performance issues.
 
 - updated daily, aggregate of previous 28 days of data
 - drill down into desktop/mobile
 - assesses Core Web Vitals performance pass/fail
   - using p75 and "good" thresholds for LCP, FID, and CLS
+  
+Example:
+- [web.dev](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fweb.dev)
   
 ### CrUX Dashboard
 
@@ -94,11 +97,15 @@ https://developers.google.com/speed/pagespeed/insights/
 
 https://web.dev/chrome-ux-report-data-studio-dashboard/
 
-The [CrUX Dashboard](g.co/chromeuxdash) visualizes UX trends for a given origin.
+The CrUX Dashboard visualizes UX trends for a given origin.
 
 - track metric performance over time
 - drill down into desktop/phone/tablet
 - see distributions of device/connection types
+
+Examples:
+- [Creating a dashboard](g.co/chromeuxdash)
+- [Augmenting it with competitor analysis](https://datastudio.google.com/s/hV_DMqY-lMI)
 
 ### CrUX BigQuery
 
@@ -125,6 +132,9 @@ The CrUX dataset on [BigQuery](https://console.cloud.google.com/bigquery?p=chrom
 - full histograms for all Core Web Vitals plus several other UX metrics
 - joinable with the HTTP Archive dataset for deeper insights
 
+Examples:
+- ["Mastering CrUX" cookbook recipes](https://github.com/GoogleChrome/CrUX/tree/master/sql/mastering-crux)
+
 ### CrUX API
 
 ```sh
@@ -144,7 +154,9 @@ The [CrUX API](https://developers.google.com/web/tools/chrome-user-experience-re
 
 Examples:
 - [API Explorer](https://developers.google.com/web/tools/chrome-user-experience-report/api/reference/rest/v1/records/queryRecord?apix=true&apix_params=%7B%22resource%22%3A%7B%22origin%22%3A%22https%3A%2F%2Fweb.dev%22%7D%7D)
+- [crux-api-util.js](https://github.com/GoogleChrome/CrUX/blob/master/js/crux-api-util.js)
 - [Monitoring using Sheets](https://docs.google.com/spreadsheets/d/1orZNj4MRVgDeBWyrMCnyKl4gBNU-HouePo2jv2VTvc4/edit?usp=sharing)
+    - [crux_api.gs for Apps Script](https://github.com/GoogleChrome/CrUX/blob/master/gs/crux-api.gs)
 
 ### Search Console
 
@@ -156,3 +168,6 @@ The Core Web Vitals report on Search Console shows a site-wide view of UX perfor
 
 - URLs grouped by similar UX
 - monitor the number of URLs with good/poor Core Web Vitals performance
+
+Example:
+- [Web Almanac's Core Web Vitals report on Search Console](https://search.google.com/search-console/core-web-vitals?resource_id=sc-domain%3Aalmanac.httparchive.org)
