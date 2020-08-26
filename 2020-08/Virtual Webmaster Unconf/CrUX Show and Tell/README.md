@@ -10,6 +10,7 @@ Venue | Date and time | Duration
 - augmenting the CrUX Dashboard with competitive analysis
   - [side by side LCP comparison](https://datastudio.google.com/s/t-qKAY_u-cc)
   - [custom query p75 timeseries comparison](https://datastudio.google.com/s/k5gyJ2eqonY)
+  - overwritable origin UI
   
 ```sql
 SELECT
